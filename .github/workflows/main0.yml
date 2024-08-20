@@ -1,15 +1,8 @@
-name: Our Workfl
+name: Our Workflow
 on: push
 jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
-      - name: List directory contents
-        run: ls -al
-      - name: Create a directory
-        run: mkdir test001
-      - name: list 
-        run: ls -al 
-      - name: l
-        run: cd test001
-        
+      - run: ls -al
+      - uses: actions/checkout@v3
